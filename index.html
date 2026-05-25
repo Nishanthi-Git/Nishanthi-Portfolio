@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nishanthi Veerasamy — Frontend Developer, UI/UX Designer & Gen-AI Content Creator" />
+  <title>Nishanthi Veerasamy | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/thumbnails/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Nishanthi<span>.</span>V</a>
+    <ul class="nav-links">
+      <li><a href="#hero">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <!-- <li><a href="#genai-strip">Gen-AI</a></li> -->
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="hero-inner">
+
+      <div class="hero-left">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          Open to frontend, UI/UX &amp; AI content roles
+        </div>
+        <h1 class="hero-title">
+          Frontend Dev,<br>
+          <span class="c-coral">UI/UX</span> &amp;<br>
+          <span class="c-purple">Gen-AI</span> Creator
+        </h1>
+        <p class="hero-desc">
+         Hi, I'm Nishanthi, a frontend developer passionate about building responsive, accessible, and user-friendly web experiences. Skilled in HTML, CSS, JavaScript, React, and Figma, I love turning complex ideas into engaging digital products. I also enjoy experimenting with creative AI tools like Leonardo AI and Runway ML, and am actively exploring AI automation to bridge the gap between intelligent design and efficient development.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View my work</a>
+          <a href="#contact" class="btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-card">
+          <div class="card-banner">
+            <div class="card-avatar">NV</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Nishanthi Veerasamy</div>
+            <div class="card-role">Frontend Dev &middot; UI/UX Designer &middot; Gen-AI Creator &middot; Kawasaki, JP</div>
+            <div class="skill-pills">
+              <span class="pill pill-coral">React.js</span>
+              <span class="pill pill-purple">Figma</span>
+              <span class="pill pill-teal">Leonardo.ai</span>
+              <span class="pill pill-amber">Runway ML</span>
+              <span class="pill pill-pink">Adobe XD</span>
+              <span class="pill pill-purple">JavaScript</span>
+              <span class="pill pill-coral">HTML5 / CSS3</span>
+              <span class="pill pill-amber">Canva</span>
+            </div>
+            <div class="card-stats">
+              <div class="stat-box"><div class="stat-num">3+</div><div class="stat-label">Years experience</div></div>
+              <div class="stat-box"><div class="stat-num">10+</div><div class="stat-label">Projects built</div></div>
+              <div class="stat-box"><div class="stat-num">Meta</div><div class="stat-label">Certified Dev</div></div>
+              <div class="stat-box"><div class="stat-num">5★</div><div class="stat-label">Upwork rating</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Selected Work</div>
+      <h2 class="section-title">Projects I've built</h2>
+      <p class="section-desc">Frontend development, UI/UX design, and Gen-AI content creation — from full React apps to AI-generated e-commerce visuals.</p>
+
+      <!-- Tab Buttons -->
+      <div class="tabs-wrapper">
+        <button class="tab-btn active" data-tab="frontend">
+          <span>&#9883;</span> Frontend Dev <span class="tab-count">6</span>
+        </button>
+        <div class="tab-divider"></div>
+        <button class="tab-btn" data-tab="uiux">
+          <span>&#127912;</span> UI/UX Design <span class="tab-count">4</span>
+        </button>
+        <div class="tab-divider"></div>
+        <button class="tab-btn" data-tab="genai">
+          <span>&#129302;</span> Gen-AI Content <span class="tab-count">1</span>
+        </button>
+        <div class="tab-divider"></div>
+        <button class="tab-btn" data-tab="AI">
+          <span>&#127760;</span> AI Automation <span class="tab-count">1</span>
+        </button>
+      </div>
+
+      <!-- ── FRONTEND PROJECTS ── -->
+      <div class="tab-content active" id="tab-frontend">
+        <div class="projects-grid">
+
+          <div class="project-card featured">
+            <div class="project-thumb thumb-c has-img">
+              <img src="assets/thumbnails/healthy-clinic.png" alt="Healthy Clinic Reservation App screenshot" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#127973;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">React SPA &middot; Featured Project</div>
+              <div class="project-name">Healthy Clinic Reservation App</div>
+              <p class="project-desc">A full-featured healthcare appointment booking SPA with real-time slot selection, individual &amp; family account management, multi-step forms, SheetDB API integration, and responsive dashboards deployed on Vercel.</p>
+              <div class="project-tags">
+                <span class="pill pill-teal">React.js</span>
+                <span class="pill pill-coral">SheetDB API</span>
+                <span class="pill pill-purple">EmailJS</span>
+                <span class="pill pill-amber">Vercel</span>
+                <span class="pill pill-pink">Figma</span>
+              </div>
+              <a href="https://healthy-clinic-reservation.vercel.app/" target="_blank" rel="noreferrer" class="project-link">Live Demo &#8594;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb thumb-a has-img">
+              <img src="assets/thumbnails/elearning.png" alt="E-learning Website screenshot" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#127891;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Frontend &middot; Multipage</div>
+              <div class="project-name">E-learning Website</div>
+              <p class="project-desc">Responsive multipage site with dynamic content rendering, form validation, accordions, and cross-browser compatibility.</p>
+              <div class="project-tags">
+                <span class="pill pill-coral">HTML/CSS</span>
+                <span class="pill pill-teal">JavaScript</span>
+              </div>
+              <a href="https://nishanthi-git.github.io/eLearning-Website--Skillify.com/" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb thumb-b has-img">
+              <img src="assets/thumbnails/voiceover.png" alt="Multilingual Voice-Over App screenshot" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#127897;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Frontend &middot; API Integration</div>
+              <div class="project-name">Multilingual Voice-Over App</div>
+              <p class="project-desc">Text-to-speech app with multilingual API, voice speed &amp; pitch customization, and dynamic content rendering for enhanced accessibility.</p>
+              <div class="project-tags">
+                <span class="pill pill-purple">JavaScript</span>
+                <span class="pill pill-coral">Web Speech API</span>
+              </div>
+              <a href="https://nishanthi-git.github.io/Voice-Over-App/" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb thumb-d has-img">
+              <img src="assets/thumbnails/weather.png" alt="Real-Time Weather App screenshot" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#127780;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Frontend &middot; API</div>
+              <div class="project-name">Real-Time Weather App</div>
+              <p class="project-desc">Live weather app with auto-complete search, real-time API data display, and a fully responsive interface.</p>
+              <div class="project-tags">
+                <span class="pill pill-amber">JavaScript</span>
+                <span class="pill pill-teal">Weather API</span>
+              </div>
+              <a href="https://nishanthi-git.github.io/Weather-App/" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb thumb-e has-img">
+              <img src="assets/thumbnails/todo.png" alt="To-Do List App screenshot" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#9989;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Frontend &middot; Vanilla JS</div>
+              <div class="project-name">To-Do List App</div>
+              <p class="project-desc">Task manager with local storage persistence, real-time updates, add/remove items, and a clean user-friendly interface.</p>
+              <div class="project-tags">
+                <span class="pill pill-pink">JavaScript</span>
+                <span class="pill pill-coral">Local Storage</span>
+              </div>
+              <a href="https://nishanthi-git.github.io/To-Do-List-App/" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb thumb-c has-img">
+              <img src="assets/thumbnails/builders.png" alt="Builder's Website screenshot" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#127959;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Frontend &middot; Layout</div>
+              <div class="project-name">Builder's Website</div>
+              <p class="project-desc">Clean, responsive construction company site using CSS Flexbox and Grid with semantic HTML and modern layout techniques.</p>
+              <div class="project-tags">
+                <span class="pill pill-teal">HTML5</span>
+                <span class="pill pill-coral">CSS Grid</span>
+              </div>
+              <a href="https://nishanthi-git.github.io/Builder-s-Webpage/" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── UI/UX PROJECTS ── -->
+      <div class="tab-content" id="tab-uiux">
+        <div class="projects-grid">
+
+          <div class="project-card featured">
+            <div class="project-thumb thumb-b has-img">
+              <img src="assets/thumbnails/finance-tracker.png" alt="Personal Finance Tracker App" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#128176;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Figma &middot; Mobile App Design &middot; Featured</div>
+              <div class="project-name">Personal Finance Tracker App</div>
+              <p class="project-desc">Mobile-first app UI designed in Figma with reusable components — cards, forms, charts — and interactive elements like progress bars and pie charts. Accessible, mobile-first design system.</p>
+              <div class="project-tags">
+                <span class="pill pill-purple">Figma</span>
+                <span class="pill pill-coral">Mobile UI</span>
+                <span class="pill pill-teal">Components</span>
+                <span class="pill pill-pink">Accessibility</span>
+              </div>
+              <a href="https://www.figma.com/design/1ioiK2LcLQYJFO9ZAFied5/Personal-Finance-Tracker-App?node-id=67-877&p=f&t=Jz0XAUvV0I7XQwer-0" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb thumb-d has-img">
+              <img src="assets/thumbnails/table-reservation.png" alt="Table Reservation Design" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#127373;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Figma &middot; Mobile UI</div>
+              <div class="project-name">Table Reservation Design</div>
+              <p class="project-desc">Sleek mobile UI with interactive slot indicators, tap feedback, and minimalist aesthetic — mobile-first and accessible.</p>
+              <div class="project-tags">
+                <span class="pill pill-amber">Figma</span>
+                <span class="pill pill-coral">UX Design</span>
+              </div>
+              <a href="https://www.figma.com/design/mETJRDSFHrkzDg3DQOQcK4/Table-Reservation-design?node-id=393-262&p=f&t=IYYtWGZLCiQARGjk-0" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb thumb-e has-img">
+              <img src="assets/thumbnails/autumncube.png" alt="Portfolio UI/UX Design" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#127912;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Figma &middot; UI/UX &middot; Web design</div>
+              <div class="project-name">Freelance Project - Autumn Cube Agency Design</div>
+              <p class="project-desc">Minimalist portfolio landing page design featuring structured grids, custom warm gradients, accessible typography, and clean content sections for small-team client collaboration.</p>
+              <div class="project-tags">
+                <span class="pill pill-pink">Figma</span>
+                <span class="pill pill-purple">Web Design</span>
+              </div>
+              <a href="https://www.figma.com/design/WVoszItvARGBIeUlrDQGnE/Autumn-Cube--Copy-?node-id=88-31&t=TRh4H8nbXTZg7nGM-1" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb thumb-a has-img">
+              <img src="assets/thumbnails/social-media2.png" alt="Social Media & Brochures" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#128226;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Graphic Design</div>
+              <div class="project-name">Social Media &amp; Brochures</div>
+              <p class="project-desc">Social media advertisements, brochures, icons, and marketing materials for brand identity and digital engagement.</p>
+              <div class="project-tags">
+                <span class="pill pill-coral">Canva</span>
+                <span class="pill pill-amber">Adobe XD</span>
+                <span class="pill pill-purple">Photoshop</span>
+              </div>
+              <a href="https://nishanthi-graphic-works.my.canva.site/samples" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── GEN-AI PROJECTS ── -->
+      <div class="tab-content" id="tab-genai">
+        <div class="projects-grid">
+
+          <div class="project-card featured">
+            <div class="project-thumb thumb-d has-img">
+              <img src="assets/thumbnails/genai-ecommerce.png" alt="Gen-AI E-Commerce Content Creation" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#129302;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Gen-AI &middot; E-Commerce &middot; Featured</div>
+              <div class="project-name">Gen-AI Content Creation: E-Commerce</div>
+              <p class="project-desc">Used Leonardo.ai and Runway ML to generate high-quality product visuals, lifestyle imagery, and short-form videos for e-commerce applications — covering luxury handbags, earbuds, sneakers, skincare, and more. Demonstrates the future of AI-driven digital content at scale.</p>
+              <div class="project-tags">
+                <span class="pill pill-teal">Leonardo.ai</span>
+                <span class="pill pill-coral">Runway ML</span>
+                <span class="pill pill-purple">E-Commerce</span>
+                <span class="pill pill-amber">AI Video</span>
+                <span class="pill pill-pink">Product Visuals</span>
+              </div>
+              <a href="https://canva.link/gks9gesczt7xvib" target="_blank" rel="noreferrer" class="project-link">View Project &#8594;</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- AI tools info bar -->
+        <div class="genai-tools-bar">
+          <div class="genai-tools-label">AI Tools used in this project</div>
+          <div class="genai-tools-list">
+            <div class="genai-tool">
+              <div class="genai-tool-icon">&#129302;</div>
+              <div>
+                <div class="genai-tool-name">Leonardo.ai</div>
+                <div class="genai-tool-desc">Product image generation &amp; visual styling</div>
+              </div>
+            </div>
+            <div class="genai-tool">
+              <div class="genai-tool-icon">&#127916;</div>
+              <div>
+                <div class="genai-tool-name">Runway ML</div>
+                <div class="genai-tool-desc">AI video generation for product showcases</div>
+              </div>
+            </div>
+            <div class="genai-tool">
+              <div class="genai-tool-icon">&#127912;</div>
+              <div>
+                <div class="genai-tool-name">Photoshop + Canva</div>
+                <div class="genai-tool-desc">Post-processing and brand layout design</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+         
+       <!-- AI Automation ToolProject -->
+      <div class="tab-content" id="tab-AI">
+        <div class="projects-grid">
+
+          <div class="project-card featured">
+            <div class="project-thumb thumb-d has-img">
+              <img src="assets/thumbnails/ai2.png" alt="Edge AI Automation Tool" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#129302;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">AI &middot; Real-Time &middot; Autonomous</div>
+              <div class="project-name">Smart Industrial Inventory System (AI Automation Tool)</div>
+              <p class="project-desc">the development and implementation of the Smart Industrial Inventory System, a high-reliability automation tool. Unlike standard scripts, this system is designed to operate as a background utility that synchronizes data monitoring, predictive AI, and executive communication. It represents a shift from manual data management to an event-driven autonomous architecture. <br> The project was born from the need to eliminate the "latency gap" in supply chain management.
+<br><b>The Idea:</b> Create a system that "never sleeps," monitoring file changes and providing immediate inventory recommendations.
+<br><b>The Transition: </b>The project evolved from a simple Python script into a multi-process manager. By using C# as a persistent "Watchdog," the project transitioned from a tool that needs to be manually triggered into a live service that responds instantly to data changes.
+</p>
+              <div class="project-tags">
+                <span class="pill pill-teal">C# </span>
+                <span class="pill pill-coral">Python</span>
+                <span class="pill pill-purple">Automated Executive Reporting</span>
+                <span class="pill pill-amber">AI</span>
+                <span class="pill pill-pink">Real-Time Data Monitoring</span>
+                <span class="pill pill-pink">Predictive Analysis Logic</span>
+              </div>
+              <a href="#contact" target="_blank" rel="noreferrer" class="project-link">Request for Demo &#8594;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>  
+
+      
+      
+
+    </div>
+  </section>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience" class="section-alt">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Journey</div>
+      <h2 class="section-title">Experience &amp; Education</h2>
+
+      <div class="exp-grid">
+        <div class="exp-col">
+          <div class="exp-col-title">
+            <div class="exp-icon work-icon">&#128188;</div>
+            Work
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="t-period">MAY 2022 &ndash; APRIL 2024</div>
+              <div class="t-role">Web Content Creator / Frontend Developer (Contract)</div>
+              <div class="t-company coral">Clinilead Technologies Private Limited &ndash; Bangalore, India / Remote</div>
+              <p class="t-desc">Designed and developed custom WordPress themes and responsive layouts using HTML, CSS, and JavaScript. Created high-fidelity prototypes in Figma and Adobe XD. Produced engaging visual assets including banners, icons, and social media creatives. Managed end-to-end projects demonstrating strong ownership and time management in fast-paced environments.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-col exp-edu">
+          <div class="exp-col-title">
+            <div class="exp-icon edu-icon">&#127891;</div>
+            Education &amp; Certification
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="t-period">2014 &ndash; 2018</div>
+              <div class="t-role">Bachelor of Engineering</div>
+              <div class="t-company purple">Nehru Institute of Engineering &amp; Technology, Tamil Nadu</div>
+              <p class="t-desc">Electronics and Communication Engineering &mdash; CGPA: 7.96</p>
+            </div>
+            <div class="timeline-item">
+              <div class="t-period">December 2024</div>
+              <div class="t-role">Professional Certified Frontend Developer</div>
+              <div class="t-company purple">Meta &middot; Coursera &middot; Online</div>
+              <p class="t-desc">Industry-recognised certification covering React, JavaScript, HTML/CSS, version control, and responsive design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Toolkit</div>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-title"><span>&#9883;</span> Frontend Dev</div>
+          <div class="skill-tags">
+            <span class="pill pill-coral">React.js</span>
+            <span class="pill pill-coral">JavaScript ES6+</span>
+            <span class="pill pill-coral">HTML5</span>
+            <span class="pill pill-coral">CSS3</span>
+            <span class="pill pill-coral">Responsive Design</span>
+            <span class="pill pill-coral">WordPress</span>
+            <span class="pill pill-coral">Python</span>
+            <span class="pill pill-coral">C#(Basics)</span>
+            <span class="pill pill-coral">Git / GitHub</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title"><span>&#9998;</span> UI/UX &amp; Design</div>
+          <div class="skill-tags">
+            <span class="pill pill-purple">Figma</span>
+            <span class="pill pill-purple">Adobe XD</span>
+            <span class="pill pill-purple">Photoshop</span>
+            <span class="pill pill-purple">Canva</span>
+            <span class="pill pill-purple">Wireframing</span>
+            <span class="pill pill-purple">Prototyping</span>
+            <span class="pill pill-purple">User Flow Design</span>
+            <span class="pill pill-purple">Accessibility</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-title"><span>&#10024;</span> Gen-AI &amp; Tools</div>
+          <div class="skill-tags">
+            <span class="pill pill-teal">Leonardo.ai</span>
+            <span class="pill pill-teal">Runway ML</span>
+            <span class="pill pill-teal">REST APIs</span>
+            <span class="pill pill-teal">SheetDB API</span>
+            <span class="pill pill-teal">EmailJS</span>
+            <span class="pill pill-teal">Vercel</span>
+            <span class="pill pill-teal">VS Code</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <!-- <div class="languages-row">
+        <div class="section-eyebrow" style="margin-top:2rem">Languages</div>
+        <div class="lang-badges">
+          <div class="lang-badge">
+            <span class="lang-flag">&#127468;&#127463;</span>
+            <div>
+              <div class="lang-name">English</div>
+              <div class="lang-level">Business fluent</div>
+            </div>
+          </div>
+          <div class="lang-badge">
+            <span class="lang-flag">&#127471;&#127477;</span>
+            <div>
+              <div class="lang-name">Japanese</div>
+              <div class="lang-level">Elementary</div>
+            </div>
+          </div>
+          <div class="lang-badge">
+            <span class="lang-flag">&#127470;&#127475;</span>
+            <div>
+              <div class="lang-name">Tamil</div>
+              <div class="lang-level">Native</div>
+            </div>
+          </div>
+          <div class="lang-badge">
+            <span class="lang-flag">&#127465;&#127466;</span>
+            <div>
+              <div class="lang-name">German</div>
+              <div class="lang-level">A1 (currently learning)</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section id="testimonials" class="section-alt">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Client Reviews</div>
+      <h2 class="section-title">What clients say</h2>
+      <p class="section-desc">Verified 5-star reviews from my freelancing work on Upwork.</p>
+
+      <div class="reviews-track-wrapper">
+        <div class="reviews-track" id="reviewsTrack">
+
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="review-text">"Nishanthi has good clarity on the work content. Delivered the projects without any error in very short time."</blockquote>
+            <div class="review-tags">
+              <span class="review-tag">Clear Communicator</span>
+              <span class="review-tag">Detail Oriented</span>
+              <span class="review-tag">Reliable</span>
+            </div>
+            <div class="review-meta">
+              <div class="review-avatar">C</div>
+              <div>
+                <div class="review-client">Verified Client</div>
+                <div class="review-date">Jun &ndash; Sep 2022 &middot; Upwork</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="review-text">"Working with her was a pleasure. Her recordings were fast and the quality was exactly what we expected. We will be pleased to work with her again."</blockquote>
+            <div class="review-tags">
+              <span class="review-tag">Collaborative</span>
+              <span class="review-tag">Committed to Quality</span>
+            </div>
+            <div class="review-meta">
+              <div class="review-avatar">C</div>
+              <div>
+                <div class="review-client">Verified Client</div>
+                <div class="review-date">Dec 2022 &middot; Upwork</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="review-text">"Excellent working with her. Highly recommend!"</blockquote>
+            <div class="review-tags">
+              <span class="review-tag">Collaborative</span>
+            </div>
+            <div class="review-meta">
+              <div class="review-avatar">C</div>
+              <div>
+                <div class="review-client">Verified Client</div>
+                <div class="review-date">Sep 2022 &ndash; Mar 2026 &middot; Upwork</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="review-text">"It was a great experience working with her."</blockquote>
+            <div class="review-tags">
+              <span class="review-tag">Collaborative</span>
+            </div>
+            <div class="review-meta">
+              <div class="review-avatar">C</div>
+              <div>
+                <div class="review-client">Verified Client</div>
+                <div class="review-date">Sep &ndash; Oct 2022 &middot; Upwork</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="review-text">"Work delivered on time and with high quality!"</blockquote>
+            <div class="review-tags">
+              <span class="review-tag">Reliable</span>
+              <span class="review-tag">Committed to Quality</span>
+            </div>
+            <div class="review-meta">
+              <div class="review-avatar">C</div>
+              <div>
+                <div class="review-client">Verified Client</div>
+                <div class="review-date">Jun 2022 &middot; Upwork</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="review-nav">
+        <button class="review-arrow" id="reviewPrev" aria-label="Previous review">&#8592;</button>
+        <div class="review-dots" id="reviewDots"></div>
+        <button class="review-arrow" id="reviewNext" aria-label="Next review">&#8594;</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="section-eyebrow">Contact</div>
+      <h2 class="section-title">Let's connect</h2>
+
+      <div class="contact-inner">
+        <div class="contact-left">
+          <p class="contact-intro">Open to frontend developer, UI/UX designer, Gen-AI content creator roles — including remote and international opportunities.</p>
+          <div class="contact-links">
+            <!-- <a href="mailto:your@email.com" class="contact-link">
+              <div class="link-icon">&#9993;</div>
+              your@email.com
+            </a> -->
+            <!-- <a href="https://linkedin.com/in/nishanthi" target="_blank" rel="noreferrer" class="contact-link">
+              <div class="link-icon">&#128188;</div>
+              linkedin.com/in/nishanthi
+            </a> -->
+            <a href="https://github.com/Nishanthi-Git" target="_blank" rel="noreferrer" class="contact-link">
+              <div class="link-icon">&#128025;</div>
+              github.com/Nishanthi-Git
+            </a>
+            <a href="https://healthy-clinic-reservation.vercel.app/" target="_blank" rel="noreferrer" class="contact-link">
+              <div class="link-icon">&#127758;</div>
+              Live Project Demo
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Job opportunity, collaboration..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">Send message &rarr;</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LANGUAGES ═══ -->
+  <div id="genai-strip" style="background: linear-gradient(135deg, #E1F5EE 0%, #EEEDFE 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-wrap" style="padding: 2.5rem 3rem;">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+        <div>
+          <div class="section-eyebrow" style="margin-bottom: 0.4rem;">Languages</div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <div style="display: flex; align-items: center; gap: 8px; background: white; border: 1px solid var(--border); border-radius: 12px; padding: 0.5rem 1rem;">
+              <span style="font-size: 1.1rem;">&#127988;</span>
+              <div>
+                <div style="font-size: 0.82rem; font-weight: 600;">English</div>
+                <div style="font-size: 0.7rem; color: var(--muted);">Business fluent</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; background: white; border: 1px solid var(--border); border-radius: 12px; padding: 0.5rem 1rem;">
+              <span style="font-size: 1.1rem;">&#127988;</span>
+              <div>
+                <div style="font-size: 0.82rem; font-weight: 600;">Japanese</div>
+                <div style="font-size: 0.7rem; color: var(--muted);">Elementary</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; background: white; border: 1px solid var(--border); border-radius: 12px; padding: 0.5rem 1rem;">
+              <span style="font-size: 1.1rem;">&#127988;</span>
+              <div>
+                <div style="font-size: 0.82rem; font-weight: 600;">Tamil</div>
+                <div style="font-size: 0.7rem; color: var(--muted);">Native</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; background: white; border: 1px solid var(--border); border-radius: 12px; padding: 0.5rem 1rem;">
+              <span style="font-size: 1.1rem;">&#127988;</span>
+              <div>
+                <div style="font-size: 0.82rem; font-weight: 600;">German</div>
+                <div style="font-size: 0.7rem; color: var(--muted);">A1 (Currently learning)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-eyebrow" style="margin-bottom: 0.4rem;">Location &amp; Availability</div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <div style="display: flex; align-items: center; gap: 8px; background: white; border: 1px solid var(--border); border-radius: 12px; padding: 0.5rem 1rem;">
+              <span style="font-size: 1.1rem;">&#128205;</span>
+              <div>
+                <div style="font-size: 0.82rem; font-weight: 600;">Kawasaki, Japan</div>
+                <div style="font-size: 0.7rem; color: var(--muted);">APAC timezone (JST)</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; background: white; border: 1px solid var(--border); border-radius: 12px; padding: 0.5rem 1rem;">
+              <span style="font-size: 1.1rem;">&#10003;</span>
+              <div>
+                <div style="font-size: 0.82rem; font-weight: 600;">Open to Remote</div>
+                <div style="font-size: 0.7rem; color: var(--muted);">Full-time &amp; freelance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="footer-inner">
+      <span>&copy; <span id="year"></span> Nishanthi Veerasamy &middot; Frontend Developer &middot; UI/UX Designer &middot; Gen-AI Creator</span>
+      <!-- <span>Kawasaki, Japan &#127471;&#127477;</span> -->
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
