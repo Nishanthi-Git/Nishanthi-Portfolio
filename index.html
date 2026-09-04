@@ -40,15 +40,24 @@
       <div class="hero-left">
         <div class="hero-tag">
           <span class="tag-dot"></span>
-          Open to frontend, UI/UX &amp; AI content roles
+          Open to  full-stack, frontend, UI/UX &amp; AI content roles
         </div>
         <h1 class="hero-title">
-          Frontend Dev,<br>
+          Full-Stack,<br>
+          <span class="c-teal"> Frontend Dev</span> &amp;
           <span class="c-coral">UI/UX</span> &amp;<br>
           <span class="c-purple">Gen-AI</span> Creator
         </h1>
         <p class="hero-desc">
-         Hi, I'm Nishanthi, a frontend developer passionate about building responsive, accessible, and user-friendly web experiences. Skilled in HTML, CSS, JavaScript, React, and Figma, I love turning complex ideas into engaging digital products. I also enjoy experimenting with creative AI tools like Leonardo AI and Runway ML, and am actively exploring AI automation to bridge the gap between intelligent design and efficient development.</p>
+         Hi, I'm Nishanthi, Full Stack Developer with a frontend engineering background and hands-on experience
+building and deploying complete web applications end to end. Independently designed, built,
+and deployed a production full-stack insurance claims management system - a React
+frontend, a Spring Boot REST API, and a PostgreSQL database, hosted across Vercel and
+Render with working authentication and CORS-secured cross-origin communication.
+Combines two years of professional UI/UX and frontend development experience with
+growing backend skills in Java, Spring Boot, and relational databases. Seeking an entry-level
+Full Stack Developer role to build on this foundation in a production engineering
+environment.</p>
         <div class="hero-btns">
           <a href="#projects" class="btn-primary">View my work</a>
           <a href="#contact" class="btn-ghost">Get in touch</a>
@@ -64,6 +73,8 @@
             <div class="card-name">Nishanthi Veerasamy</div>
             <div class="card-role">Frontend Dev &middot; UI/UX Designer &middot; Gen-AI Creator &middot; Kawasaki, JP</div>
             <div class="skill-pills">
+              <span class="pill pill-teal">Java (Learning)</span>
+              <span class="pill pill-pink">Spring Boot (Learning)</span>
               <span class="pill pill-coral">React.js</span>
               <span class="pill pill-purple">Figma</span>
               <span class="pill pill-teal">Leonardo.ai</span>
@@ -91,11 +102,14 @@
     <div class="section-wrap">
       <div class="section-eyebrow">Selected Work</div>
       <h2 class="section-title">Projects I've built</h2>
-      <p class="section-desc">Frontend development, UI/UX design, and Gen-AI content creation — from full React apps to AI-generated e-commerce visuals.</p>
+      <p class="section-desc">Full-Stack & Frontend development, UI/UX design, and Gen-AI content creation — from full React apps to AI-generated e-commerce visuals.</p>
 
       <!-- Tab Buttons -->
       <div class="tabs-wrapper">
-        <button class="tab-btn active" data-tab="frontend">
+        <button class="tab-btn active" data-tab="fullstack">
+          <span>&#9749;</span> Java Full Stack <span class="tab-count">1</span>
+        </button>
+        <button class="tab-btn" data-tab="frontend">
           <span>&#9883;</span> Frontend Dev <span class="tab-count">6</span>
         </button>
         <div class="tab-divider"></div>
@@ -110,6 +124,62 @@
         <button class="tab-btn" data-tab="AI">
           <span>&#127760;</span> AI Automation <span class="tab-count">1</span>
         </button>
+      </div>
+
+      <!-- ── JAVA FULL STACK PROJECTS ── -->
+      <div class="tab-content" id="tab-fullstack">
+        <div class="projects-grid">
+
+          <div class="project-card featured">
+            <div class="project-thumb thumb-b">
+              <img src="assets/thumbnails/healthy-clinic.png" alt="Healthy Clinic Reservation App screenshot" class="thumb-img" onerror="this.style.display='none'" />
+              <span class="thumb-emoji">&#9749;</span>
+            </div>
+            <div class="project-info">
+              <div class="project-type">Full-Stack &middot; Java + React &middot; Featured</div>
+              <div class="project-name">Insurance Claims Management System</div>
+              <p class="project-desc">An end-to-end full-stack app that automates claim submissions, tracking, and status processing. Built a Java Spring Boot REST API (Controller/Service/Repository layers) with Spring Data JPA and Hibernate against a PostgreSQL database, Dockerized the backend for deployment on Render, and paired it with a React (Vite) frontend on Vercel &mdash; with CORS-secured cross-origin communication and real-time field validation. First capstone applying Java, Spring Boot, and relational databases learned through ongoing full-stack training.</p>
+              <div class="project-tags">
+                <span class="pill pill-coral">Java</span>
+                <span class="pill pill-purple">Spring Boot</span>
+                <span class="pill pill-teal">Spring Data JPA</span>
+                <span class="pill pill-amber">PostgreSQL</span>
+                <span class="pill pill-pink">React.js (Vite)</span>
+                <span class="pill pill-coral">Docker</span>
+              </div>
+              <a href="https://insurance-claim-portal-kappa.vercel.app/" target="_blank" rel="noreferrer" class="project-link">Live Demo &#8594;</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Full-stack training info bar -->
+        <div class="genai-tools-bar">
+          <div class="genai-tools-label">Currently learning</div>
+          <div class="genai-tools-list">
+            <div class="genai-tool">
+              <div class="genai-tool-icon">&#9749;</div>
+              <div>
+                <div class="genai-tool-name">Java &amp; Spring Boot</div>
+                <div class="genai-tool-desc">OOPs, Spring MVC, Spring Data JPA, RESTful APIs</div>
+              </div>
+            </div>
+            <div class="genai-tool">
+              <div class="genai-tool-icon">&#128451;</div>
+              <div>
+                <div class="genai-tool-name">PostgreSQL</div>
+                <div class="genai-tool-desc">Relational schema design &amp; data persistence</div>
+              </div>
+            </div>
+            <div class="genai-tool">
+              <div class="genai-tool-icon">&#128230;</div>
+              <div>
+                <div class="genai-tool-name">Docker &amp; Deployment</div>
+                <div class="genai-tool-desc">Containerized services on Render, frontend on Vercel</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- ── FRONTEND PROJECTS ── -->
@@ -725,7 +795,7 @@
             <div style="display: flex; align-items: center; gap: 8px; background: white; border: 1px solid var(--border); border-radius: 12px; padding: 0.5rem 1rem;">
               <span style="font-size: 1.1rem;">&#128205;</span>
               <div>
-                <div style="font-size: 0.82rem; font-weight: 600;">Kawasaki, Japan</div>
+                <div style="font-size: 0.82rem; font-weight: 600;">Japan</div>
                 <div style="font-size: 0.7rem; color: var(--muted);">APAC timezone (JST)</div>
               </div>
             </div>
@@ -745,8 +815,8 @@
   <!-- ═══ FOOTER ═══ -->
   <footer>
     <div class="footer-inner">
-      <span>&copy; <span id="year"></span> Nishanthi Veerasamy &middot; Frontend Developer &middot; UI/UX Designer &middot; Gen-AI Creator</span>
-      <!-- <span>Kawasaki, Japan &#127471;&#127477;</span> -->
+      <span>&copy; <span id="year"></span> Nishanthi Veerasamy &middot; Full-Stack Developer &middot; UI/UX Designer &middot; Gen-AI Creator</span>
+      <!-- <span>Japan &#127471;&#127477;</span> -->
     </div>
   </footer>
 
