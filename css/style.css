@@ -269,14 +269,15 @@ img { max-width: 100%; display: block; }
 
 .hero-title {
   font-family: 'Syne', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: clamp(2.6rem, 4.5vw, 3.8rem);
   line-height: 1.05;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
   margin-bottom: 1.5rem;
 }
 .c-coral   { color: var(--coral); }
 .c-purple  { color: var(--purple); }
+.c-teal    { color: var(--teal); }
 
 .hero-desc {
   font-size: 1rem;
