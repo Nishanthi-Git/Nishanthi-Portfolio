@@ -832,7 +832,7 @@ footer {
   .hero-inner { padding: calc(var(--nav-h) + 2rem) 1.5rem 3rem; }
   .skills-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
-  .tabs-wrapper { width: 100%; }
+  .tabs-wrapper { width: 100%; flex-wrap: wrap; }
   .tab-btn { flex: 1; justify-content: center; }
   footer { padding: 1.5rem; }
   .footer-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
